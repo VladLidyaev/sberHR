@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="tagsCollectionViewCell" customModule="TestQ_A" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WI1-Kf-pWC">
+                        <rect key="frame" x="-1" y="0.0" width="120" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA6-dm-M0n">
+                                <rect key="frame" x="12" y="5" width="96" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="01R-tB-3zQ"/>
+                            <constraint firstAttribute="trailing" secondItem="HA6-dm-M0n" secondAttribute="trailing" constant="12" id="4Jy-hS-vVo"/>
+                            <constraint firstItem="HA6-dm-M0n" firstAttribute="leading" secondItem="WI1-Kf-pWC" secondAttribute="leading" constant="12" id="Efk-uM-6MN"/>
+                            <constraint firstAttribute="width" constant="120" id="Wf9-JE-u0p"/>
+                            <constraint firstAttribute="bottom" secondItem="HA6-dm-M0n" secondAttribute="bottom" constant="5" id="a5u-Tm-4Cz"/>
+                            <constraint firstItem="HA6-dm-M0n" firstAttribute="top" secondItem="WI1-Kf-pWC" secondAttribute="top" constant="5" id="ncy-OU-u8s"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="WI1-Kf-pWC" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="8Hb-Me-Aeg"/>
+                <constraint firstItem="WI1-Kf-pWC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="oDv-9u-vPH"/>
+            </constraints>
+            <size key="customSize" width="118" height="50"/>
+            <connections>
+                <outlet property="background" destination="WI1-Kf-pWC" id="iPK-fe-eXh"/>
+                <outlet property="label" destination="HA6-dm-M0n" id="1pY-kT-NqZ"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="91.741071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
