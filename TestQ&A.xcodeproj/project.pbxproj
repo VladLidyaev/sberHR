@@ -29,6 +29,8 @@
 		F5A18B0E25E9B955008602AF /* questionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A18B0C25E9B955008602AF /* questionTableViewCell.swift */; };
 		F5A18B0F25E9B955008602AF /* questionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A18B0D25E9B955008602AF /* questionTableViewCell.xib */; };
 		F5A18B2625EA3376008602AF /* purposesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A18B2525EA3376008602AF /* purposesViewController.swift */; };
+		F5B98EA625EA9372001D24C5 /* contentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B98EA525EA9372001D24C5 /* contentModel.swift */; };
+		F5B98EAA25EA98D2001D24C5 /* spaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B98EA925EA98D2001D24C5 /* spaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		F5A18B0C25E9B955008602AF /* questionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionTableViewCell.swift; sourceTree = "<group>"; };
 		F5A18B0D25E9B955008602AF /* questionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = questionTableViewCell.xib; sourceTree = "<group>"; };
 		F5A18B2525EA3376008602AF /* purposesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purposesViewController.swift; sourceTree = "<group>"; };
+		F5B98EA525EA9372001D24C5 /* contentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentModel.swift; sourceTree = "<group>"; };
+		F5B98EA925EA98D2001D24C5 /* spaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		F576F72825E96E1D0002E587 /* TestQ&A */ = {
 			isa = PBXGroup;
 			children = (
+				F5B98EA425EA934C001D24C5 /* contentModels */,
 				F5703B1725EA4A7F007534ED /* API */,
 				F576F74625E973B70002E587 /* Controllers */,
 				F576F74525E973AE0002E587 /* Storyboards */,
@@ -150,6 +155,7 @@
 				F576F73F25E9737B0002E587 /* developmentViewController.swift */,
 				F5A18B0425E9B142008602AF /* QAViewController.swift */,
 				F5A18B2525EA3376008602AF /* purposesViewController.swift */,
+				F5B98EA925EA98D2001D24C5 /* spaceViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +180,14 @@
 				F5A18AF625E978F6008602AF /* categoryCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F5B98EA425EA934C001D24C5 /* contentModels */ = {
+			isa = PBXGroup;
+			children = (
+				F5B98EA525EA9372001D24C5 /* contentModel.swift */,
+			);
+			path = contentModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,11 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F576F74025E9737B0002E587 /* developmentViewController.swift in Sources */,
+				F5B98EA625EA9372001D24C5 /* contentModel.swift in Sources */,
 				F576F72E25E96E1D0002E587 /* ViewController.swift in Sources */,
 				F5A18B0525E9B142008602AF /* QAViewController.swift in Sources */,
 				F5A18B2625EA3376008602AF /* purposesViewController.swift in Sources */,
 				F576F72A25E96E1D0002E587 /* AppDelegate.swift in Sources */,
 				F5A18AF725E978F6008602AF /* categoryCollectionViewCell.swift in Sources */,
+				F5B98EAA25EA98D2001D24C5 /* spaceViewController.swift in Sources */,
 				F5703B2225EA4BD2007534ED /* questionById.swift in Sources */,
 				F576F72C25E96E1D0002E587 /* SceneDelegate.swift in Sources */,
 				F5A18AFC25E98C0C008602AF /* requestDecodable.swift in Sources */,

@@ -256,6 +256,7 @@
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="uiX-36-TZD">
                             <connections>
                                 <action selector="addQuestion:" destination="arE-Ah-rT4" id="8JK-s3-AGQ"/>
+                                <segue destination="lNj-nA-xSF" kind="show" id="pxl-OE-YvY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -286,6 +287,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTC-KH-TET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4171.875" y="164.78873239436621"/>
+        </scene>
+        <!--Space-->
+        <scene sceneID="rDw-Us-YwM">
+            <objects>
+                <viewController id="GbT-0m-JnK" customClass="spaceViewController" customModule="TestQ_A" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZCF-HI-0Aa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jAE-hb-6Yf">
+                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qj6-hh-psd">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qj6-hh-psd" id="QKM-pv-ixi">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cWm-76-Wmu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cWm-76-Wmu" firstAttribute="bottom" secondItem="jAE-hb-6Yf" secondAttribute="bottom" id="594-to-dcJ"/>
+                            <constraint firstItem="cWm-76-Wmu" firstAttribute="trailing" secondItem="jAE-hb-6Yf" secondAttribute="trailing" id="5Zq-RJ-Q85"/>
+                            <constraint firstItem="jAE-hb-6Yf" firstAttribute="top" secondItem="cWm-76-Wmu" secondAttribute="top" id="AwD-Pi-jDI"/>
+                            <constraint firstItem="jAE-hb-6Yf" firstAttribute="leading" secondItem="cWm-76-Wmu" secondAttribute="leading" id="hjl-uL-2We"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Space" id="r6w-vz-kXz">
+                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="wdQ-fj-BUv">
+                            <connections>
+                                <action selector="xButtonTap:" destination="GbT-0m-JnK" id="TbK-hc-oPM"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Готово" id="GSc-5A-4qF">
+                                <connections>
+                                    <action selector="doneButtonTap:" destination="GbT-0m-JnK" id="yad-6f-zdJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="gearshape" catalog="system" id="Cq7-2J-d8n">
+                                <connections>
+                                    <action selector="settingsButtonTap:" destination="GbT-0m-JnK" id="4az-yP-f8m"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="jAE-hb-6Yf" id="y6U-MO-LWA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5i7-T6-vCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377.5" y="-1921.4788732394366"/>
         </scene>
         <!--развитие-->
         <scene sceneID="AYn-6X-wmc">
@@ -382,15 +442,36 @@
             </objects>
             <point key="canvasLocation" x="3174.375" y="164.78873239436621"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Nv-J9-XWQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="lNj-nA-xSF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="BeZ-LB-r4g"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xaH-iF-AdK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GbT-0m-JnK" kind="relationship" relationship="rootViewController" id="m1c-JL-KR4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PR4-xl-uIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="-1921.4788732394366"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="circle.grid.hex.fill" catalog="system" width="128" height="112"/>
         <image name="flag" catalog="system" width="128" height="121"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="timer" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

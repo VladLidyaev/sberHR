@@ -38,6 +38,7 @@ struct comment : Decodable {
 }
 
 struct content : Decodable {
+    let id : Int?
     let count : Int?
     let text : [textBlock]?
     let media : [mediaBlock]?
