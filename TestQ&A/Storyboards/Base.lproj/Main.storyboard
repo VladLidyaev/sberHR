@@ -158,10 +158,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BF1-bp-DvL">
-                                <rect key="frame" x="0.0" y="91" width="320" height="50"/>
+                                <rect key="frame" x="12" y="91" width="296" height="50"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hNk-sS-Ibn">
-                                        <rect key="frame" x="12" y="5" width="296" height="40"/>
+                                        <rect key="frame" x="5" y="5" width="286" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-tn-kz2">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
@@ -172,7 +172,7 @@
                                                 <state key="normal" image="magnifyingglass" catalog="system"/>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BiD-me-ix5">
-                                                <rect key="frame" x="47" y="0.0" width="249" height="40"/>
+                                                <rect key="frame" x="47" y="0.0" width="239" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="IKK-m1-yz2"/>
                                                 </constraints>
@@ -181,18 +181,21 @@
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="BiD-me-ix5" firstAttribute="leading" secondItem="MMQ-tn-kz2" secondAttribute="trailing" constant="12" id="II5-DW-yjd"/>
-                                            <constraint firstAttribute="trailing" secondItem="BiD-me-ix5" secondAttribute="trailing" id="zaG-Sn-pNd"/>
+                                            <constraint firstAttribute="bottom" secondItem="BiD-me-ix5" secondAttribute="bottom" id="EIA-2V-QT5"/>
+                                            <constraint firstItem="MMQ-tn-kz2" firstAttribute="leading" secondItem="hNk-sS-Ibn" secondAttribute="leading" id="V8P-4c-MSI"/>
+                                            <constraint firstAttribute="trailing" secondItem="BiD-me-ix5" secondAttribute="trailing" id="dTq-uy-Von"/>
+                                            <constraint firstItem="BiD-me-ix5" firstAttribute="top" secondItem="hNk-sS-Ibn" secondAttribute="top" id="edZ-Gb-vHc"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hNk-sS-Ibn" secondAttribute="trailing" constant="12" id="EeJ-Mo-Muc"/>
-                                    <constraint firstAttribute="bottom" secondItem="hNk-sS-Ibn" secondAttribute="bottom" constant="5" id="G7B-Ua-JcK"/>
-                                    <constraint firstItem="MMQ-tn-kz2" firstAttribute="centerY" secondItem="BF1-bp-DvL" secondAttribute="centerY" id="inH-lo-THB"/>
-                                    <constraint firstItem="hNk-sS-Ibn" firstAttribute="leading" secondItem="BF1-bp-DvL" secondAttribute="leading" constant="12" id="lCg-ZZ-kxX"/>
-                                    <constraint firstItem="hNk-sS-Ibn" firstAttribute="top" secondItem="BF1-bp-DvL" secondAttribute="top" constant="5" id="mJi-3d-G0z"/>
+                                    <constraint firstItem="MMQ-tn-kz2" firstAttribute="centerY" secondItem="BF1-bp-DvL" secondAttribute="centerY" id="O4e-22-na9"/>
+                                    <constraint firstItem="hNk-sS-Ibn" firstAttribute="leading" secondItem="BF1-bp-DvL" secondAttribute="leading" constant="5" id="SqX-Bx-197"/>
+                                    <constraint firstAttribute="trailing" secondItem="hNk-sS-Ibn" secondAttribute="trailing" constant="5" id="a66-DW-KzC"/>
+                                    <constraint firstItem="hNk-sS-Ibn" firstAttribute="top" secondItem="BF1-bp-DvL" secondAttribute="top" constant="5" id="db8-RB-DYl"/>
+                                    <constraint firstAttribute="bottom" secondItem="hNk-sS-Ibn" secondAttribute="bottom" constant="5" id="mB7-k2-yin"/>
+                                    <constraint firstItem="BiD-me-ix5" firstAttribute="centerY" secondItem="BF1-bp-DvL" secondAttribute="centerY" id="wWc-LX-U7y"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i4Q-yC-sMT">
@@ -210,7 +213,7 @@
                                 </prototypes>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tnd-Uv-8WW">
-                                <rect key="frame" x="12" y="146" width="296" height="60"/>
+                                <rect key="frame" x="0.0" y="146" width="320" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="x7F-pb-IdY"/>
@@ -237,16 +240,16 @@
                         <viewLayoutGuide key="safeArea" id="lLq-wK-tIo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="i4Q-yC-sMT" firstAttribute="leading" secondItem="lLq-wK-tIo" secondAttribute="leading" constant="12" id="EJ4-bE-3YP"/>
-                            <constraint firstItem="lLq-wK-tIo" firstAttribute="trailing" secondItem="tnd-Uv-8WW" secondAttribute="trailing" constant="12" id="HQg-fI-ILf"/>
-                            <constraint firstItem="BF1-bp-DvL" firstAttribute="top" secondItem="lLq-wK-tIo" secondAttribute="top" id="V8d-0z-1gK"/>
-                            <constraint firstItem="i4Q-yC-sMT" firstAttribute="top" secondItem="tnd-Uv-8WW" secondAttribute="bottom" constant="5" id="aDz-U0-eyu"/>
-                            <constraint firstItem="lLq-wK-tIo" firstAttribute="trailing" secondItem="i4Q-yC-sMT" secondAttribute="trailing" constant="12" id="bF6-R7-H9D"/>
-                            <constraint firstItem="tnd-Uv-8WW" firstAttribute="top" secondItem="BF1-bp-DvL" secondAttribute="bottom" constant="5" id="cah-kH-Jbt"/>
-                            <constraint firstAttribute="bottom" secondItem="i4Q-yC-sMT" secondAttribute="bottom" id="fcq-Ci-x3W"/>
-                            <constraint firstItem="BF1-bp-DvL" firstAttribute="leading" secondItem="lLq-wK-tIo" secondAttribute="leading" id="ooY-Ei-Kot"/>
-                            <constraint firstItem="BF1-bp-DvL" firstAttribute="trailing" secondItem="lLq-wK-tIo" secondAttribute="trailing" id="uB5-UP-nH3"/>
-                            <constraint firstItem="tnd-Uv-8WW" firstAttribute="leading" secondItem="lLq-wK-tIo" secondAttribute="leading" constant="12" id="x7G-eC-B6O"/>
+                            <constraint firstAttribute="bottom" secondItem="i4Q-yC-sMT" secondAttribute="bottom" id="PVy-Vw-4ny"/>
+                            <constraint firstItem="BF1-bp-DvL" firstAttribute="leading" secondItem="lLq-wK-tIo" secondAttribute="leading" constant="12" id="UHF-FZ-9iN"/>
+                            <constraint firstItem="lLq-wK-tIo" firstAttribute="trailing" secondItem="BF1-bp-DvL" secondAttribute="trailing" constant="12" id="Uik-8H-EL6"/>
+                            <constraint firstItem="i4Q-yC-sMT" firstAttribute="leading" secondItem="lLq-wK-tIo" secondAttribute="leading" constant="12" id="ZFk-Gp-YEM"/>
+                            <constraint firstItem="tnd-Uv-8WW" firstAttribute="leading" secondItem="lLq-wK-tIo" secondAttribute="leading" id="e21-fa-2It"/>
+                            <constraint firstItem="BF1-bp-DvL" firstAttribute="top" secondItem="lLq-wK-tIo" secondAttribute="top" id="gjb-49-AVf"/>
+                            <constraint firstItem="i4Q-yC-sMT" firstAttribute="top" secondItem="tnd-Uv-8WW" secondAttribute="bottom" constant="5" id="gms-0F-hJf"/>
+                            <constraint firstItem="tnd-Uv-8WW" firstAttribute="top" secondItem="BF1-bp-DvL" secondAttribute="bottom" constant="5" id="icR-5L-Ezo"/>
+                            <constraint firstItem="lLq-wK-tIo" firstAttribute="trailing" secondItem="i4Q-yC-sMT" secondAttribute="trailing" constant="12" id="uqG-ri-K4n"/>
+                            <constraint firstItem="lLq-wK-tIo" firstAttribute="trailing" secondItem="tnd-Uv-8WW" secondAttribute="trailing" id="vCb-sV-ri3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Q&amp;A" id="Uf8-Cl-U7p">
@@ -266,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6G3-e1-E4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3174" y="-750"/>
+            <point key="canvasLocation" x="3172.5" y="-750"/>
         </scene>
         <!--цели-->
         <scene sceneID="f3U-wo-e1o">

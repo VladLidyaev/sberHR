@@ -48,7 +48,7 @@ class QAViewController: UIViewController {
         updateQuestions()
         
         tableView.separatorStyle = .none
-        
+        collectionView.showsHorizontalScrollIndicator = false
     }
     
     
